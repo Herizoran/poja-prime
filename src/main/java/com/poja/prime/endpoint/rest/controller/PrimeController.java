@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class PrimeController {
   @GetMapping("/new-prime")
   public BigInteger generateProbablePrime() {
-    BigInteger probablePrime = BigInteger.probablePrime(10000, new Random());
+    BigInteger probablePrime = BigInteger.probablePrime(500, new Random());
     return probablePrime;
   }
 }
